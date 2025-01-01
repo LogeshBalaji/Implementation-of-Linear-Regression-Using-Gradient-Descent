@@ -21,9 +21,7 @@ Developed by: Logesh B
 RegisterNumber: 24900577 
 */
 ```
-
-
-
+```.py
 import numpy as np  
 import pandas as pd    
 from sklearn.preprocessing import StandardScaler  
@@ -50,7 +48,8 @@ new_Scaled=scaler.fit_transform(new_data)
 prediction=np.dot(np.append(1, new_Scaled),theta)   
 prediction=prediction.reshape(-1,1)   
 pre=scaler.inverse_transform(prediction)   
-print(f"Predicted value: {pre}")   
+print(f"Predicted value: {pre}")
+``` 
 ## Output:
 ![screenshot-1730358685815](https://github.com/user-attachments/assets/e8bb6c78-57be-42a4-9027-943a03696508)
 
